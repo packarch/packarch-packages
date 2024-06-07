@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=About Packarch
+Comment=Details regarding Packarch and credits
+Exec=packarch-about
+Icon=packarch-cyan
+Type=Application
+Categories=System;

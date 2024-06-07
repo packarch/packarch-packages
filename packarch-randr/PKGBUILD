@@ -1,0 +1,25 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=packarch-randr
+pkgver=1.0
+pkgrel=4
+pkgdesc="Rofi frontend (with xrandr backend) to manage monitors"
+arch=('any')
+url="https://github.com/packarch-os/packarch-packages"
+license=('GPL3')
+depends=('packarch-scripts')
+options=(!strip !emptydirs)
+
+source=(packarch-randr
+		packarch-randr.desktop
+		packarch-randr.rasi)
+
+sha256sums=('f399ac42b7300a3ad4a8625f0bb3b1e5385778a1ff670ff086d53c5b84ceb58c'
+            '80cac6c1159ce2d4669d85465ff98400b8e0922f23daa6769e85be0db311028b'
+            '7f629b32ba784f5105ee8a9b7edd6817da08ce7797e77f261be8fa5f7ea7feb1')
+
+package() {
+	install -Dm 755 packarch-randr   			"$pkgdir"/usr/bin/packarch-randr
+	install -Dm 644 packarch-randr.desktop		"$pkgdir"/usr/share/applications/packarch-randr.desktop
+	install -Dm 644 packarch-randr.rasi   		"$pkgdir"/usr/share/packarch/randr/rofi/packarch-randr.rasi
+}

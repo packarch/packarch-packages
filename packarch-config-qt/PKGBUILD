@@ -1,0 +1,21 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=packarch-config-qt
+pkgver=1.0
+pkgrel=2
+pkgdesc="QT5/6 config for Packarch"
+arch=('any')
+url="https://github.com/packarch-os/packarch-skeleton"
+license=('GPL3')
+depends=('qt6ct' 'qt5ct' 'kvantum' 'kvantum-qt5')
+options=(!strip !emptydirs)
+
+prepare() {
+	cp -af ../files/. "$srcdir"
+}
+
+package() {
+	local _cfgdir="$pkgdir"/etc/skel/.config
+	mkdir -p "$_cfgdir"
+	cp -r "$srcdir"/* "$_cfgdir"
+}

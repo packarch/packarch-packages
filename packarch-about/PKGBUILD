@@ -1,0 +1,22 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=packarch-about
+pkgver=2.0
+pkgrel=0
+pkgdesc="Details regarding Packarch and credits"
+arch=('any')
+url="https://github.com/packarch-os/packarch-packages"
+license=('GPL3')
+depends=('yad')
+options=(!strip !emptydirs)
+
+source=(packarch-about
+		packarch-about.desktop)
+
+sha256sums=('8fabe8c0391649c63d033d5b459f6040c0e0b76c99a682b27044ca4cf251eb6d'
+            '032087559558151b231a6b974a95e51cc1acbeb54b01df3f1d25c2ac584c0a26')
+
+package() {
+	install -Dm 755 packarch-about   		"$pkgdir"/usr/bin/packarch-about
+	install -Dm 644 packarch-about.desktop	"$pkgdir"/usr/share/applications/packarch-about.desktop
+}

@@ -1,0 +1,20 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=packarch-scripts
+pkgver=1.0
+pkgrel=3
+pkgdesc="Scripts needed for Packarch"
+arch=('any')
+url="https://github.com/packarch-os/packarch-packages"
+license=('GPL3')
+options=(!strip !emptydirs)
+
+prepare() {
+	cp -af ../files/. "$srcdir"
+}
+
+package() {
+	install -Dm 755 packarch-reload-theme   "$pkgdir"/usr/bin/packarch-reload-theme
+	install -Dm 755 packarch-tcma           "$pkgdir"/usr/bin/packarch-tcma
+	# more will be added in future
+}

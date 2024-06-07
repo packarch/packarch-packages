@@ -1,0 +1,20 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=packarch-config-geany
+pkgver=1.0
+pkgrel=2
+pkgdesc="Geany config and color-schemes for Packarch"
+arch=('any')
+url="https://github.com/packarch-os/packarch-skeleton"
+license=('GPL3')
+options=(!strip !emptydirs)
+
+prepare() {
+	cp -af ../files/. "$srcdir"
+}
+
+package() {
+	local _cfgdir="$pkgdir"/etc/skel/.config
+	mkdir -p "$_cfgdir"
+	cp -r "$srcdir"/* "$_cfgdir"
+}
