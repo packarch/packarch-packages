@@ -64,6 +64,7 @@ package() {
 	install -Dm 644 environment				"$_obdir"/environment
 	install -Dm 644 menu-glyphs.xml			"$_obdir"/menu-glyphs.xml
 	install -Dm 644 menu-icons.xml			"$_obdir"/menu-icons.xml
+	install -Dm 644 rc.xml					"$_obdir"/rc.xml
 
 	# Copy openbox scripts
 	cp -r "$srcdir"/scripts 				"$_obdir"
