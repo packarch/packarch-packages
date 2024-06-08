@@ -15,16 +15,24 @@ DIR="$(pwd)"
 PKGDIR="$DIR/packages_aur"
 
 LIST=(betterlockscreen
+autofs
+ckbcomp
+mkinitcpio-openswap
+aic94xx-firmware
+ast-firmware
+wd719x-firmware
+upd72020x-fw
 cava
+light
+wezterm-terminfo-git
+simplescreenrecorder
 downgrade
 gtk3-nocsd-git
 i3lock-color
-ksuperkey
 mkinitcpio-firmware
 networkmanager-dmenu-git
 obmenu-generator
 perl-linux-desktopfiles
-sddm-git
 xfce-polkit
 yay
 )
