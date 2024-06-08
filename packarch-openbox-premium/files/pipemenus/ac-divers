@@ -16,7 +16,7 @@ menuStart
 	menuItem 'Lecteur Musique Ncurse' "alacritty -e ncmpcpp"
 	menuItem 'Visualiseur Audio' "alacritty -e cava"
 	menuItem 'Infos Neofetch' "alacritty -e $SHELL -c neofetch;$SHELL"
-	menuItem 'Pipes Animation' "alacritty -e $SHELL -c /usr/share/archcraft/scripts/./pipes;$SHELL"
+	menuItem 'Pipes Animation' "alacritty -e $SHELL -c /usr/share/packarch/scripts/./pipes;$SHELL"
 	menuItem 'Matrix Vert' "alacritty -e rmatrix -C green"
 	menuItem 'Matrix Jaune' "alacritty -e rmatrix -C yellow"
 	menuItem 'Matrix Bleu' "alacritty -e rmatrix -C cyan"
