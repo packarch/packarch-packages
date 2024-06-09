@@ -74,9 +74,9 @@ dunst_border='0'
 dunst_separator='2'
 
 # Plank
-plank_hmode='auto'
+plank_hmode='intelligent'
 plank_offset='0'
-plank_position='right'
+plank_position='top'
 plank_theme='Transparent'
 plank_icon_size='32'
 plank_zoom_percent='120'

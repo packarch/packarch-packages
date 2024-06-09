@@ -44,17 +44,17 @@ terminal_font_name='JetBrainsMono Nerd Font'
 terminal_font_size='10'
 
 # Geany
-geany_colors='arc.conf'
+geany_colors='mountain.conf'
 geany_font='JetBrains Mono 10'
 
 # Appearance
 gtk_font='Noto Sans 9'
-gtk_theme='Arc-Dark'
-icon_theme='Zafiro'
+gtk_theme='Kripton'
+icon_theme='Luna-Antidote-Dark'
 cursor_theme='Qogirr'
 
 # Openbox
-ob_theme='Arc-Dark'
+ob_theme='Kripton'
 ob_layout='DLIMC'
 ob_font='JetBrains Mono'
 ob_font_size='9'
