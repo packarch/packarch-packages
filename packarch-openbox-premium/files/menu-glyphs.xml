@@ -14,7 +14,7 @@
 		<menu id="ac-places" execute="&pipes;/ac-places --recent ~/" label=" Parcourir"/>
 		<item label=" Internet">
 			<action name="Execute">
-				<command>firefox</command>
+				<command>vivaldi</command>
 			</action>
 		</item>
 		<item label=" Editeur de texte">

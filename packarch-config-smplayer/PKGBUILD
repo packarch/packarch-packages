@@ -1,12 +1,15 @@
 # Maintainer: Aditya Shakya <adi1090x@gmail.com>
 
-pkgname=packarch-config-geany
-pkgver=1.0
-pkgrel=2
-pkgdesc="Geany config and color-schemes for Packarch"
-arch=('any')
+pkgname=packarch-config-smplayer
+pkgver=1.1
+pkgrel=1
+pkgdesc="Smplayer dark Config for Packarch"
 url="https://github.com/packarch-os/packarch-skeleton"
+arch=('any')
 license=('GPL3')
+makedepends=()
+depends=()
+conflicts=()
 provides=("${pkgname}")
 options=(!strip !emptydirs)
 
