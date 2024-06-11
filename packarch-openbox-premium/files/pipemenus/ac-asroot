@@ -16,9 +16,9 @@ root_cmd="$HOME/.config/openbox/scripts/ob-asroot"
 
 # menu
 menuStart
-	menuItem 'Terminal (alacritty)' "$root_cmd 'alacritty'"
-	menuItem 'File Manager (thunar)' "$root_cmd 'dbus-run-session thunar'"
-	menuItem 'Text Editor (geany)' "$root_cmd 'geany'"
+	menuItem 'Terminal' "$root_cmd 'alacritty'"
+	menuItem 'Gestionnaire de fichiers' "$root_cmd 'dbus-run-session thunar'"
+	menuItem 'Editeur de texte' "$root_cmd 'geany'"
 	menuSeparator
 	menuItem 'QT5 Settings' "$root_cmd 'qt5ct'"
 	menuItem 'kvantum Manager' "$root_cmd 'kvantummanager'"

@@ -1,11 +1,11 @@
-# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+# Maintainer: Fabrice Corraire <antidote1911@gmail.com>
 
 pkgname=packarch-about
 pkgver=2.0
 pkgrel=0
 pkgdesc="Details regarding Packarch and credits"
 arch=('any')
-url="https://github.com/packarch-os/packarch-packages"
+url="https://github.com/packarch"
 license=('GPL3')
 depends=('yad')
 options=(!strip !emptydirs)
@@ -13,7 +13,7 @@ options=(!strip !emptydirs)
 source=(packarch-about
 		packarch-about.desktop)
 
-sha256sums=('8fabe8c0391649c63d033d5b459f6040c0e0b76c99a682b27044ca4cf251eb6d'
+sha256sums=('82c933fa10e6ef8dd5d85807acbe5a77d4740574a791be2166ee8e0ed32fd421'
             '032087559558151b231a6b974a95e51cc1acbeb54b01df3f1d25c2ac584c0a26')
 
 package() {

@@ -27,9 +27,9 @@ gen_menu () {
 	
 	# Random Colors (pywal)
 	if [[ -e "$DIR/$CTHEME/random.sh" ]]; then
-		menuSubmenu "current_theme" "0. Current"
+		menuSubmenu "current_theme" "0. Actuel"
 			menuSeparator "${CTHEME^}"
-			menuItem "✤ Change Colors" "bash $DIR/$CTHEME/random.sh"
+			menuItem "✤ Changer Couleurs" "bash $DIR/$CTHEME/random.sh"
 		menuSubmenuEnd
 		menuSeparator
 	fi

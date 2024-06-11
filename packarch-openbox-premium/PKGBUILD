@@ -8,13 +8,13 @@ arch=('any')
 url="https://github.com/packarch-os/packarch-openbox"
 license=('custom:DBAD')
 depends=('openbox' 'obconf' 'obmenu-generator' 'perl-linux-desktopfiles'
-		'pulsemixer' 'light' 'polybar' 'tint2' 'rofi' 'dunst' 'nitrogen'
+		'pulsemixer' 'light' 'polybar' 'rofi' 'dunst' 'nitrogen'
 		'pastel' 'python-pywal' 'xfce4-settings' 'xmlstarlet' 'python-lxml'
 )
 optdepends=('alacritty: default terminal emulator'
 			'thunar: default file manager'
 			'geany: default text editor'
-			'firefox: default web browser'
+			'vivaldi: default web browser'
 			'viewnior: default image viewer'
 			'betterlockscreen: default lockscreen'
 			'ksuperkey: allows you to open the application launcher using the Super key'
@@ -57,7 +57,7 @@ package() {
 	cp -r "$srcdir"/networkmanager-dmenu 	"$_configdir"
 	cp -r "$srcdir"/nitrogen 				"$_configdir"
 	cp -r "$srcdir"/obmenu-generator 		"$_configdir"
-	cp -r "$srcdir"/plank 					"$_configdir"
+	cp -r "$srcdir"/cairo-dock 				"$_configdir"
 
 	# Copy window manager configs
 	install -Dm 755 autostart   			"$_obdir"/autostart
@@ -72,7 +72,7 @@ package() {
 
 	# Copy openbox themes
 	cp -r "$srcdir"/themes 					"$_obdir"
-	chmod +x "$_obdir"/themes/{launch-bar,polybar,tint2}.sh
+	chmod +x "$_obdir"/themes/polybar.sh
 
 	apply_files=(`find ${_obdir}/themes -type f | grep apply.sh`)
 	for _afile in "${apply_files[@]}"; do

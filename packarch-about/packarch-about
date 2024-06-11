@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-## Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
+## Copyright (C) 2020-2024 Fabrice Corraire <antidote1911@gmail.com>
 ##
 ## About Packarch
 
@@ -17,8 +17,8 @@ yad --title='About Packarch' --window-icon='packarch-cyan' \
 	--pversion="$version" \
 	--image='distributor-logo-packarch' \
 	--comments="Yet another minimal linux distribution, Based on Arch Linux." \
-	--copyright="Copyright 2020-`date +'%Y'`, Aditya Shakya <adi1090x@gmail.com>" \
+	--copyright="Copyright 2020-`date +'%Y'`, Fabrice Corraire <antidote1911@gmail.com>" \
 	--license='GPL3' \
-	--website='https://packarch.io' \
-	--website-label='packarch.io' \
-	--authors="Aditya Shakya <adi1090x@gmail.com>"
+	--website='https://github.com/packarch' \
+	--website-label='packarch' \
+	--authors="Fabrice Corraire <antidote1911@gmail.com>"

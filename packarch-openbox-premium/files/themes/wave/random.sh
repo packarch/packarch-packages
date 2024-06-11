@@ -176,7 +176,7 @@ apply_dunst() {
 	_EOF_
 
 	# restart dunst
-	pkill dunst && dunst &
+	pkill dunst & sleep 1 && dunst &
 }
 
 ## Openbox -----------------------------------
@@ -336,4 +336,4 @@ apply_dunst
 apply_openbox
 
 # launch polybar / tint2
-bash ${PATH_OBOX}/themes/launch-bar.sh
+bash ${PATH_OBOX}/themes/polybar.sh

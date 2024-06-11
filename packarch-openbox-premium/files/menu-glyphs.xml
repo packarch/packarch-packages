@@ -11,7 +11,11 @@
 				<command>alacritty</command>
 			</action>
 		</item>
-		<menu id="ac-places" execute="&pipes;/ac-places --recent ~/" label=" Parcourir"/>
+		<item label=" Fichiers">
+			<action name="Execute">
+				<command>thunar</command>
+			</action>
+		</item>
 		<item label=" Internet">
 			<action name="Execute">
 				<command>vivaldi</command>
@@ -19,7 +23,7 @@
 		</item>
 		<item label=" Editeur de texte">
 			<action name="Execute">
-				<command>geany</command>
+				<command>geany -i</command>
 			</action>
 		</item>
 		<separator/>
@@ -37,17 +41,12 @@
 					</action>
 				</item>
 				<separator/>
-				<item label="Editter menu.xml">
+				<item label="Editer menu.xml">
 					<action name="Execute">
 						<command>exo-open ~/.config/openbox/menu-glyphs.xml</command>
 					</action>
 				</item>
-				<item label="Editter rc.xml">
-					<action name="Execute">
-						<command>exo-open ~/.config/openbox/rc.xml</command>
-					</action>
-				</item>
-				<item label="Editter autostart">
+				<item label="Editer autostart">
 					<action name="Execute">
 						<command>exo-open ~/.config/openbox/autostart</command>
 					</action>
@@ -61,7 +60,6 @@
 				</item>
 			</menu>
 			<menu id="CompositingPipeMenu" execute="&pipes;/ac-compositor" label="Compositeur"/>
-			<menu id="PanelPipeMenu" execute="&pipes;/ac-panel" label="Panel / Bar"/>
 			<menu id="XrandrPipeMenu" execute="&pipes;/ac-randr" label="Affichage / Moniteur"/>
 			<separator/>
 			<menu id="StylePipeMenu" execute="&pipes;/ac-change-style" label="Changer Style"/>

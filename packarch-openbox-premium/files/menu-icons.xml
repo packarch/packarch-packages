@@ -13,9 +13,13 @@
 			</action>
 		</item>
 		<separator/>
-		<menu icon="&icons;/places.png" id="ac-places" execute="&pipes;/ac-places --recent ~/" label="Parcourir"/>
+		<item icon="&icons;/filemanager.png" label="Fichiers">
+			<action name="Execute">
+				<command>thunar</command>
+			</action>
+		</item>
 		<separator/>
-		<item icon="&icons;/browser.png" label="Internet">
+		<item icon="&icons;/browser.png" label="Navigateur">
 			<action name="Execute">
 				<command>vivaldi</command>
 			</action>
@@ -23,7 +27,7 @@
 		<separator/>
 		<item icon="&icons;/editor.png" label="Editeur de texte">
 			<action name="Execute">
-				<command>geany</command>
+				<command>geany -i</command>
 			</action>
 		</item>
 		<separator/>
@@ -52,17 +56,12 @@
 					</action>
 				</item>
 				<separator/>
-				<item label="Editter menu.xml">
+				<item label="Editer menu.xml">
 					<action name="Execute">
 						<command>exo-open ~/.config/openbox/menu-icons.xml</command>
 					</action>
 				</item>
-				<item label="Editter rc.xml">
-					<action name="Execute">
-						<command>exo-open ~/.config/openbox/rc.xml</command>
-					</action>
-				</item>
-				<item label="Editter autostart">
+				<item label="Editer autostart">
 					<action name="Execute">
 						<command>exo-open ~/.config/openbox/autostart</command>
 					</action>
@@ -76,13 +75,11 @@
 				</item>
 			</menu>
 			<menu id="CompositingPipeMenu" execute="&pipes;/ac-compositor" label="Compositeur"/>
-			<menu id="PanelPipeMenu" execute="&pipes;/ac-panel" label="Panel / Bar"/>
 			<menu id="XrandrPipeMenu" execute="&pipes;/ac-randr" label="Affichage / Moniteur"/>
 			<separator/>
 			<menu id="StylePipeMenu" execute="&pipes;/ac-change-style" label="Changer Style"/>
 			<menu id="FontPipeMenu" execute="&pipes;/ac-change-fonts" label="Changer Fontes"/>
 			<menu id="SchemePipeMenu" execute="&pipes;/ac-change-scheme" label="Couleurs Terminal"/>
-			<menu id="KeybindsPipeMenu" execute="&pipes;/ac-kb-pipemenu" label="Racourcits Clavier"/>
 			<separator/>
 			<item label="Changer Wallpaper">
 				<action name="Execute">

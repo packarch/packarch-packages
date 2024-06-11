@@ -679,7 +679,7 @@
     </keybind>
     <keybind key="W-w">
       <action name="Execute">
-        <command>vivaldi</command>
+        <command>firefox</command>
       </action>
     </keybind>
     <keybind key="W-e">

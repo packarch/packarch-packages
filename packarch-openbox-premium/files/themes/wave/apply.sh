@@ -74,12 +74,6 @@ apply_polybar() {
 	EOF
 }
 
-## Tint2 -----------------------------------
-apply_tint2() {
-	# modify tint2 launch script
-	sed -i -e "s/STYLE=.*/STYLE=\"$THEME\"/g" ${PATH_OBOX}/themes/tint2.sh
-}
-
 # Rofi --------------------------------------
 apply_rofi() {
 	# modify rofi scripts
@@ -275,38 +269,15 @@ apply_dunst() {
 	_EOF_
 
 	# restart dunst
-	pkill dunst && dunst &
+	pkill dunst & sleep 1 && dunst &
 }
 
-# Plank -------------------------------------
-apply_plank() {
-	# create temporary config file
-	cat > "$HOME"/.cache/plank.conf <<- _EOF_
-		[dock1]
-		alignment='center'
-		auto-pinning=true
-		current-workspace-only=false
-		dock-items=['xfce-settings-manager.dockitem', 'Alacritty.dockitem', 'thunar.dockitem', 'firefox.dockitem', 'geany.dockitem']
-		hide-delay=0
-		hide-mode='$plank_hmode'
-		icon-size=$plank_icon_size
-		items-alignment='center'
-		lock-items=false
-		monitor=''
-		offset=$plank_offset
-		pinned-only=false
-		position='$plank_position'
-		pressure-reveal=false
-		show-dock-item=false
-		theme='$plank_theme'
-		tooltips-enabled=true
-		unhide-delay=0
-		zoom-enabled=true
-		zoom-percent=$plank_zoom_percent
-	_EOF_
-
-	# apply config and reload plank
-	cat "$HOME"/.cache/plank.conf | dconf load /net/launchpad/plank/docks/
+# Cairo-dock --------------------------------
+apply_cairodock() {
+	# apply config and reload cairodock
+	sed -i "s/screen border=.*/screen border=3/g" "$HOME"/.config/cairo-dock/current_theme/cairo-dock.conf
+	# restart dunst
+	pkill cairo-dock & sleep 1 && cairo-dock &
 }
 
 # Compositor --------------------------------
@@ -344,7 +315,6 @@ notify_user
 create_file
 apply_wallpaper
 apply_polybar
-apply_tint2
 apply_rofi
 apply_netmenu
 apply_terminal
@@ -352,11 +322,11 @@ apply_geany
 apply_appearance
 apply_obconfig
 apply_dunst
-apply_plank
+apply_cairodock
 apply_compositor
 
 # launch polybar / tint2
-bash ${PATH_OBOX}/themes/launch-bar.sh
+bash ${PATH_OBOX}/themes/polybar.sh
 
 # fix cursor theme (run it in the end)
 xsetroot -cursor_name left_ptr

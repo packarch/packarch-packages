@@ -73,14 +73,6 @@ dunst_font='JetBrains Mono 12'
 dunst_border='2'
 dunst_separator='2'
 
-# Plank
-plank_hmode='intelligent'
-plank_offset='0'
-plank_position='left'
-plank_theme='Transparent'
-plank_icon_size='48'
-plank_zoom_percent='120'
-
 # Picom
 picom_backend='glx'
 picom_corner='0'

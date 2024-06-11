@@ -142,12 +142,12 @@ main()
     else
         # Check if search engine set.
         if [ "$SITE_TO_USE" ]; then
-            query=$(echo "$(gen_queries_list $SITE_TO_USE)" | rofi -theme ~/.config/openbox-themes/themes/eleven/rofi/search.rasi -dmenu -p "Search ($SITE_TO_USE)")
+            query=$(echo "$(gen_queries_list $SITE_TO_USE)" | rofi -theme ~/.config/openbox/themes/eleven/rofi/search.rasi -dmenu -p "Search ($SITE_TO_USE)")
 
             handle_query "$SITE_TO_USE" "$query"
         else
-            site=$(echo "$(gen_sites_list)" | rofi -theme ~/.config/openbox-themes/themes/eleven/rofi/search.rasi -dmenu -p "Search" -no-custom)
-            query=$(echo "$(gen_queries_list $site)" | rofi -theme ~/.config/openbox-themes/themes/eleven/rofi/search.rasi -dmenu -p "Search ($site)")
+            site=$(echo "$(gen_sites_list)" | rofi -theme ~/.config/openbox/themes/eleven/rofi/search.rasi -dmenu -p "Search" -no-custom)
+            query=$(echo "$(gen_queries_list $site)" | rofi -theme ~/.config/openbox/themes/eleven/rofi/search.rasi -dmenu -p "Search ($site)")
 
             handle_query "$site" "$query"
         fi

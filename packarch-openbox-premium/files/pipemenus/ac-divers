@@ -17,11 +17,7 @@ menuStart
 	menuItem 'Visualiseur Audio' "alacritty -e cava"
 	menuItem 'Infos Neofetch' "alacritty -e $SHELL -c neofetch;$SHELL"
 	menuItem 'Pipes Animation' "alacritty -e $SHELL -c /usr/share/packarch/scripts/./pipes;$SHELL"
-	menuItem 'Matrix Vert' "alacritty -e rmatrix -C green"
-	menuItem 'Matrix Jaune' "alacritty -e rmatrix -C yellow"
-	menuItem 'Matrix Bleu' "alacritty -e rmatrix -C cyan"
-	menuItem 'Matrix Rouge' "alacritty -e rmatrix -C red"
-	menuItem 'Matrix Antidote1911' "alacritty -e rmatrix -r"
+	menuItem 'Enter The Matrix' "alacritty -e rmatrix -r"
 	
 menuEnd
 

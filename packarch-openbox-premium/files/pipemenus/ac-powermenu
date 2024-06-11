@@ -13,8 +13,8 @@ RASI="$DIR/$CTHEME/rofi/confirm.rasi"
 # Layout
 cnflayout=`cat ${RASI} | grep 'USE_ICON' | cut -d'=' -f2`
 if [[ "$cnflayout" == 'NO' ]]; then
-	yes=' Oui'
-	no=' Non'
+	yes=' Yes'
+	no=' No'
 else
 	yes=''
 	no=''
@@ -24,7 +24,7 @@ fi
 confirm_cmd() {
 	rofi -dmenu \
 		-p 'Confirmation' \
-		-mesg 'Etes-vous certain ?' \
+		-mesg 'Are you Sure?' \
 		-theme ${RASI}
 }
 

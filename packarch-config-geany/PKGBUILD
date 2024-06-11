@@ -7,6 +7,7 @@ pkgdesc="Geany config and color-schemes for Packarch"
 arch=('any')
 url="https://github.com/packarch-os/packarch-skeleton"
 license=('GPL3')
+depends=('geany')
 provides=("${pkgname}")
 options=(!strip !emptydirs)
 
