@@ -14,7 +14,7 @@ source=('neofetch'
 		'config.conf')
 
 sha256sums=('f498a08802ab49a76627a261dca9bd05fe67f4499392d187ae954e385b7c835c'
-            'e076edd4a4e571eb431b8efc5ba5da513c8c354c700e6aecdae7a5142382defc')
+            '8b351eb65a4dad90992db8747a9c8083bf6bac0fb38c58e1d2ff27642065af81')
 
 package() {
 	install -Dm 755 neofetch   		"$pkgdir"/usr/bin/neofetch

@@ -39,7 +39,7 @@ polybar_font='Iosevka Nerd Font:size=10;3'
 
 # Rofi
 rofi_font='Iosevka 10'
-rofi_icon='Zafiro'
+rofi_icon='Luna-Purple-Dark'
 
 # Terminal
 terminal_font_name='JetBrainsMono Nerd Font'
@@ -52,7 +52,7 @@ geany_font='JetBrains Mono 10'
 # Appearance
 gtk_font='Noto Sans 9'
 gtk_theme='Sweet-Dark'
-icon_theme='Zafiro-Purple'
+icon_theme='Luna-Purple-Dark'
 cursor_theme='Sweet'
 
 # Openbox

@@ -1,30 +1,30 @@
 # ------------------------------------------------------------------------------
 # Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
 #
-# Catppuccin Frappe Theme
+# Satanic Theme
 # ------------------------------------------------------------------------------
 
 # Colors
-background='#303446'
-foreground='#C6D0F5'
-color0='#51576D'
-color1='#E78284'
-color2='#A6D189'
-color3='#E5C890'
-color4='#8CAAEE'
-color5='#F4B8E4'
-color6='#81C8BE'
-color7='#B5BFE2'
-color8='#626880'
-color9='#E78284'
-color10='#A6D189'
-color11='#E5C890'
-color12='#8CAAEE'
-color13='#F4B8E4'
-color14='#81C8BE'
-color15='#A5ADCE'
+background='#131519'
+foreground='#EF2929'
+color0='#27292D'
+color1='#ec7875'
+color2='#61c766'
+color3='#fdd835'
+color4='#42a5f5'
+color5='#ba68c8'
+color6='#4dd0e1'
+color7='#d8d8d8'
+color8='#3B3D41'
+color9='#fb8784'
+color10='#70d675'
+color11='#ffe744'
+color12='#51b4ff'
+color13='#c979d7'
+color14='#5cdff0'
+color15='#fdf6e3'
 
-accent='#EF9F76'
+accent='#EDD400'
 light_value='0.05'
 dark_value='0.30'
 
@@ -33,49 +33,49 @@ wdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 wallpaper="$wdir/wallpaper"
 
 # Polybar
-polybar_font='JetBrains Mono:size=10;3'
+polybar_font='Iosevka Nerd Font:size=10;3'
 
 # Rofi
 rofi_font='Iosevka 10'
-rofi_icon='Numix-Apps'
+rofi_icon='Luna-Red-Dark'
 
 # Terminal
 terminal_font_name='JetBrainsMono Nerd Font'
 terminal_font_size='10'
 
 # Geany
-geany_colors='catppuccin-frappe.conf'
+geany_colors='mountain.conf'
 geany_font='JetBrains Mono 10'
 
 # Appearance
 gtk_font='Noto Sans 9'
-gtk_theme='Catppuccin-Frappe'
-icon_theme='Numix-Apps'
-cursor_theme='Fluent'
+gtk_theme='Kripton'
+icon_theme='Luna-Red-Dark'
+cursor_theme='Fluent-Dark'
 
 # Openbox
-ob_theme='Catppuccin-Frappe'
-ob_layout='MLC'
+ob_theme='Satanic'
+ob_layout='CMIL'
 ob_font='JetBrains Mono'
 ob_font_size='9'
 ob_menu='menu-icons.xml'
-ob_margin_t='48'
+ob_margin_t='46'
 ob_margin_b='10'
-ob_margin_l='10'
-ob_margin_r='10'
+ob_margin_l='19'
+ob_margin_r='19'
 
 # Dunst
 dunst_width='300'
 dunst_height='80'
-dunst_offset='30x65'
+dunst_offset='19x46'
 dunst_origin='top-right'
 dunst_font='JetBrains Mono 10'
-dunst_border='1'
-dunst_separator='1'
+dunst_border='4'
+dunst_separator='2'
 
 # Picom
 picom_backend='glx'
-picom_corner='0'
+picom_corner='6'
 picom_shadow_r='14'
 picom_shadow_o='0.30'
 picom_shadow_x='-12'

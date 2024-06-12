@@ -29,6 +29,7 @@
 		<separator/>
 		<menu id="app-menu" execute="obmenu-generator" label=" Applications"/>
 		<menu id="ac-asroot" execute="&pipes;/ac-asroot" label=" Apps Root"/>
+		<menu id="ac-shortcuts" execute="&pipes;/ac-shortcuts" label=" Liens Web"/>
 		<menu id="ac-shots" execute="&pipes;/ac-shots" label=" Screenshot"/>
 		<menu id="ac-record" execute="&pipes;/ac-record" label=" Filmer Bureau"/>
 		<separator/>		

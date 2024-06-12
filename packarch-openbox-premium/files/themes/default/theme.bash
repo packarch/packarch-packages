@@ -5,8 +5,8 @@
 # ------------------------------------------------------------------------------
 
 # Colors
-background='#1E2128'
-foreground='#ABB2BF'
+background='#131519'
+foreground='#E7EFA8'
 color0='#32363D'
 color1='#E06B74'
 color2='#98C379'
@@ -37,7 +37,7 @@ polybar_font='JetBrains Mono:size=10;3'
 
 # Rofi
 rofi_font='Iosevka 10'
-rofi_icon='Zafiro'
+rofi_icon='Luna-Antidote-Dark'
 
 # Terminal
 terminal_font_name='JetBrainsMono Nerd Font'

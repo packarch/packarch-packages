@@ -37,6 +37,8 @@
 		<separator/>
 		<menu icon="&icons;/root.png" id="ac-asroot" execute="&pipes;/ac-asroot" label="Apps Root"/>
 		<separator/>
+		<menu icon="&icons;/sys-exit.png" id="ac-shortcuts" execute="&pipes;/ac-shortcuts" label="Liens Web"/>
+		<separator/>
 		<menu icon="&icons;/cmd.png" id="ac-divers" execute="&pipes;/ac-divers" label="Divers"/>
 		<separator/>
 		<separator/>
