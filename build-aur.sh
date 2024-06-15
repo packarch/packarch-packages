@@ -16,6 +16,7 @@ PKGDIR="$DIR/packages_aur"
 
 LIST=(betterlockscreen
 autofs
+waypaper
 ckbcomp
 mkinitcpio-openswap
 aic94xx-firmware
