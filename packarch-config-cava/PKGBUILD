@@ -1,0 +1,22 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=packarch-config-cava
+pkgver=1.0
+pkgrel=2
+pkgdesc="Cava config and color-schemes for Packarch"
+arch=('any')
+url="https://github.com/packarch-os/packarch-skeleton"
+license=('GPL3')
+depends=('cava')
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+prepare() {
+	cp -af ../files/. ${srcdir}
+}
+
+package() {
+	local _cfgdir=${pkgdir}/etc/skel/.config
+	mkdir -p "$_cfgdir"
+	cp -r ${srcdir}/* "$_cfgdir"
+}

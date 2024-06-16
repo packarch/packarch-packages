@@ -12,9 +12,6 @@ super + Return
 super + shift + Return
 	bspterm --float
 
-# Terminal (fullscreen)
-super + alt + Return
-	bspterm --full
 
 ##---------- Rofi Launcher & Menus ----------##
 

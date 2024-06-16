@@ -15,6 +15,16 @@ elif [ "$1" == "--full" ]; then
 			  -o window.startup_mode="'Fullscreen'" \
 			  window.padding.x=30 window.padding.y=30 \
 			  window.opacity=0.95 font.size=14
+elif [ "$1" == "--rmatrix" ]; then
+	alacritty --config-file "$CONFIG" -e $SHELL -c 'rmatrix -r && $SHELL' &
+elif [ "$1" == "--neofetch" ]; then
+	alacritty --config-file "$CONFIG" -e $SHELL -c 'neofetch && $SHELL' &
+elif [ "$1" == "--pipes" ]; then
+	alacritty --config-file "$CONFIG" -e $SHELL -c 'pipes && $SHELL' &
+elif [ "$1" == "--music" ]; then
+	alacritty --config-file "$CONFIG" -e ncmpcpp &
+elif [ "$1" == "--cava" ]; then
+	alacritty --config-file "$CONFIG" -e cava &
 else
 	alacritty --config-file "$CONFIG"
 fi
