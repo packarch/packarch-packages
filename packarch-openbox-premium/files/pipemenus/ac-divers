@@ -14,7 +14,7 @@ fi
 
 menuStart
 	menuItem 'Lecteur Musique Ncurse' "alacritty -e ncmpcpp"
-	menuItem 'Visualiseur Audio' "alacritty -e cava"
+	menuItem 'Visualiseur Audio' "cavalier"
 	menuItem 'Infos Neofetch' "alacritty -e $SHELL -c neofetch;$SHELL"
 	menuItem 'Pipes Animation' "alacritty -e $SHELL -c /usr/share/packarch/scripts/./pipes;$SHELL"
 	menuItem 'Enter The Matrix' "alacritty -e rmatrix -r"
