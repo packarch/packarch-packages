@@ -1,13 +1,13 @@
 # Maintainer: Aditya Shakya <adi1090x@gmail.com>
 
-pkgname=packarch-config-cavalier
+pkgname=packarch-config-cava
 pkgver=1.0
 pkgrel=2
-pkgdesc="Cavalier config and color-schemes for Packarch"
+pkgdesc="Cava config and color-schemes for Packarch"
 arch=('any')
 url="https://github.com/packarch-os/packarch-skeleton"
 license=('GPL3')
-depends=('cavalier')
+depends=('cava')
 provides=("${pkgname}")
 options=(!strip !emptydirs)
 
