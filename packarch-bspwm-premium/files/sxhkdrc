@@ -24,14 +24,14 @@ alt + r
 	rofi_runner
 
 # Rofi Menus/Applets
-super + shift + {b,m,n,r,s,w}
-	{rofi_bluetooth,rofi_music,nmd,rofi_asroot,rofi_screenshot,rofi_windows,rofi_powermenu}
+super + shift + {b,m,n,r,s,w,t}
+	{rofi_bluetooth,rofi_music,nmd,rofi_asroot,rofi_screenshot,rofi_windows,rofi_powermenu,rofi_themes}
 
 ##---------- Applications ----------##
 
 # Launch Apps
-super + {v,f,h,x,t}
-	{vivaldi,thunar,alacritty --config-file ~/.config/bspwm/alacritty/alacritty.toml -e htop,rofi_powermenu,rofi_themes}
+super + {f,t,h,x}
+	{firefox,thunar,alacritty --config-file ~/.config/bspwm/alacritty/alacritty.toml -e htop,rofi_powermenu}
 
 # Color Picker
 super + p

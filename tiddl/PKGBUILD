@@ -1,0 +1,23 @@
+# Maintainer : Frikilinux <frikilinux@gmail.com>
+# Contributor : peeweep <peeweep at 0x0 dot ee>
+
+pkgname=tiddl
+pkgver=2022.10.31.1
+pkgrel=1
+pkgdesc="Download videos and tracks from Tidal."
+arch=('any')
+url="https://github.com/oskvr37/tiddl"
+license=('Apache')
+# depends=('')
+source=("https://github.com/oskvr37/tiddl/archive/refs/tags/v1.8.2.zip")
+sha256sums=('3f69d98b92715ea719e00408ba1a5c2c216dcd7cb84ce2c3e1fda605acce8df1')
+
+build() {
+  cd "${pkgname}-1.8.2"
+  python setup.py build
+}
+
+package() {
+  cd "${pkgname}-1.8.2"
+  python setup.py install --root="${pkgdir}/" --optimize=1 --skip-build
+}
